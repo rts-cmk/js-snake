@@ -40,6 +40,8 @@ export default class SnakeBoard {
         }
 
         ['keydown', 'swipe'].forEach(eventType => document.addEventListener(eventType, event => {
+            event.preventDefault();
+
             let key = event.key || event.detail.direction;
 
             switch (key) {
