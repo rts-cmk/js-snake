@@ -13,6 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #333;
+    touch-action: none;
 }
 
 
