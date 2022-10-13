@@ -1,0 +1,35 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+}
+
+
+.snake-board {
+    background-color: black;
+    border-collapse: collapse;
+}
+
+.snake-board td {
+    width: 10px;
+    height: 10px;
+}
+
+.snake-board td.snake {
+    background-color: white;
+}
+
+.snake-board td.food {
+    background-color: red;
+}
