@@ -53,7 +53,7 @@ export default class SnakeBoard {
                 case 'ArrowLeft': case 'Left': this.#snake.moveLeft(); break;
                 case 'ArrowRight': case 'Right': this.#snake.moveRight(); break;
             }
-        }), false);
+        }, false));
 
         this.placeFood();
 
