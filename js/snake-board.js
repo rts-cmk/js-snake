@@ -1,4 +1,5 @@
 import Snake from "./snake.js";
+import SwipeHandler from "./swpie-handler.js";
 
 export default class SnakeBoard {
 
@@ -38,6 +39,8 @@ export default class SnakeBoard {
             }
             this.#element.appendChild(row);
         }
+
+        SwipeHandler.add(document);
 
         ['keydown', 'swipe'].forEach(eventType => document.addEventListener(eventType, event => {
             event.preventDefault();
