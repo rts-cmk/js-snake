@@ -12,13 +12,14 @@ html, body {
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-color: #333;
     touch-action: none;
 }
 
 
 .snake-board {
+    margin-top: 20px;
     background-color: black;
     border-collapse: collapse;
 }
