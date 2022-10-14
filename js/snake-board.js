@@ -42,7 +42,7 @@ export default class SnakeBoard {
 
         SwipeHandler.add(document);
 
-        ['keydown', 'swipe'].forEach(eventType => document.addEventListener(eventType, event => {
+        ['keydown', 'swipe'].forEach(eventType => document.body.addEventListener(eventType, event => {
             event.preventDefault();
 
             let key = event.key || event.detail.direction;
@@ -53,7 +53,7 @@ export default class SnakeBoard {
                 case 'ArrowLeft': case 'Left': this.#snake.moveLeft(); break;
                 case 'ArrowRight': case 'Right': this.#snake.moveRight(); break;
             }
-        }));
+        }), false);
 
         this.placeFood();
 
